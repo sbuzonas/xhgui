@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "34f80e3c55cc5381144890950f71b4f8",
+    "content-hash": "3e0c8fbf496957a4de00029527fc34f1",
     "packages": [
         {
             "name": "pimple/pimple",
@@ -52,25 +52,27 @@
                 "container",
                 "dependency injection"
             ],
-            "time": "2013-03-08 08:21:40"
+            "time": "2013-03-08T08:21:40+00:00"
         },
         {
             "name": "slim/slim",
-            "version": "2.3.1",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/codeguy/Slim.git",
-                "reference": "2e540cc392644b9b5cdcc57e5576db5a92ca2149"
+                "url": "https://github.com/slimphp/Slim.git",
+                "reference": "e434525b348963457e00fe3d46376ebb70581781"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeguy/Slim/zipball/2e540cc392644b9b5cdcc57e5576db5a92ca2149",
-                "reference": "2e540cc392644b9b5cdcc57e5576db5a92ca2149",
+                "url": "https://api.github.com/repos/slimphp/Slim/zipball/e434525b348963457e00fe3d46376ebb70581781",
+                "reference": "e434525b348963457e00fe3d46376ebb70581781",
                 "shasum": ""
             },
             "require": {
-                "ext-mcrypt": "*",
                 "php": ">=5.3.0"
+            },
+            "suggest": {
+                "ext-mcrypt": "Required for HTTP cookie encryption"
             },
             "type": "library",
             "autoload": {
@@ -96,7 +98,11 @@
                 "rest",
                 "router"
             ],
-            "time": "2013-07-20 18:38:05"
+            "support": {
+                "issues": "https://github.com/slimphp/Slim/issues",
+                "source": "https://github.com/slimphp/Slim/tree/master"
+            },
+            "time": "2015-03-02T02:13:34+00:00"
         },
         {
             "name": "slim/views",
@@ -146,7 +152,7 @@
                 "slimphp",
                 "templating"
             ],
-            "time": "2013-07-10 07:34:17"
+            "time": "2013-07-10T07:34:17+00:00"
         },
         {
             "name": "twig/twig",
@@ -198,7 +204,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-06-06 06:06:01"
+            "time": "2013-06-06T06:06:01+00:00"
         }
     ],
     "packages-dev": [
@@ -261,7 +267,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-03-28 10:53:45"
+            "time": "2014-03-28T10:53:45+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -306,7 +312,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2013-10-10 15:34:57"
+            "time": "2013-10-10T15:34:57+00:00"
         },
         {
             "name": "phpunit/php-text-template",
@@ -350,7 +356,7 @@
             "keywords": [
                 "template"
             ],
-            "time": "2014-01-30 17:20:04"
+            "time": "2014-01-30T17:20:04+00:00"
         },
         {
             "name": "phpunit/php-timer",
@@ -394,7 +400,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2013-08-02 07:42:54"
+            "time": "2013-08-02T07:42:54+00:00"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -444,7 +450,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2014-03-03 05:10:30"
+            "time": "2014-03-03T05:10:30+00:00"
         },
         {
             "name": "phpunit/phpunit",
@@ -517,7 +523,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-04-30 12:24:19"
+            "time": "2014-04-30T12:24:19+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -566,7 +572,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2013-01-13 10:24:48"
+            "time": "2013-01-13T10:24:48+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -615,22 +621,21 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-09 09:05:48"
+            "time": "2014-07-09T09:05:48+00:00"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "phpunit/phpunit": 20
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
-        "php": ">=5.3.0",
-        "ext-xhprof": "*"
+        "php": ">=5.3.0"
     },
     "platform-dev": {
         "ext-dom": "*"
-    }
+    },
+    "plugin-api-version": "2.6.0"
 }
